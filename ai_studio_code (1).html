@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUCTION DYNAMICS | The Masterclass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050505; color: #fff; font-family: 'Space Grotesk', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(to right, #3b82f6, #9333ea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glow-hover:hover { box-shadow: 0 0 30px rgba(59, 130, 246, 0.4); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="selection:bg-blue-500 selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 px-8 py-6 flex justify-between items-center glass">
+        <div class="text-2xl font-bold tracking-tighter">AUCTION<span class="text-blue-500">DYNAMICS</span></div>
+        <div class="hidden md:flex space-x-10 text-xs uppercase tracking-widest font-medium opacity-70">
+            <a href="#theory" class="hover:text-blue-400 transition">AMT</a>
+            <a href="#tpo" class="hover:text-blue-400 transition">TPO Profile</a>
+            <a href="#flow" class="hover:text-blue-400 transition">Orderflow</a>
+            <a href="#pricing" class="hover:text-blue-400 transition">Pricing</a>
+        </div>
+        <button class="bg-blue-600 hover:bg-blue-500 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition">Enroll Now</button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="pt-40 pb-20 px-6 text-center">
+        <div class="inline-block px-4 py-1 border border-blue-500/30 rounded-full text-blue-400 text-xs font-bold mb-6 tracking-widest uppercase">
+            Now Accepting Students for 2025
+        </div>
+        <h1 class="text-6xl md:text-8xl font-bold leading-none mb-8 tracking-tighter">
+            THE MARKET IS AN <br> <span class="text-gradient">OPEN AUCTION.</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-xl text-gray-400 mb-10 leading-relaxed">
+            Stop drawing lines on charts. Learn to read the <strong>intent</strong> of institutional participants using Auction Market Theory and Real-Time Order Flow.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <button class="bg-white text-black px-10 py-5 rounded-full font-bold text-lg glow-hover">Get Full Access — $997</button>
+            <button class="glass px-10 py-5 rounded-full font-bold text-lg hover:bg-white/10">Watch Free Lesson</button>
+        </div>
+    </header>
+
+    <!-- TRADING VISUALIZER (MOCKUP) -->
+    <section class="max-w-6xl mx-auto px-6 py-10">
+        <div class="glass rounded-3xl p-8 border-blue-500/20 overflow-hidden">
+            <div class="flex justify-between items-center mb-8">
+                <div class="flex space-x-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <div class="text-xs font-mono text-blue-400 tracking-widest uppercase">Live Auction Feed // E-MINI S&P 500</div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 font-mono">
+                <div class="space-y-2 opacity-50">
+                    <div class="text-xs text-gray-500 mb-4">TPO STRUCTURE</div>
+                    <div class="h-4 w-full bg-blue-900/20 rounded"></div>
+                    <div class="h-4 w-3/4 bg-blue-900/40 rounded"></div>
+                    <div class="h-4 w-full bg-blue-900/60 rounded"></div>
+                    <div class="h-4 w-5/6 bg-blue-500/80 rounded"></div>
+                    <div class="h-4 w-2/3 bg-blue-900/40 rounded"></div>
+                </div>
+                <div class="col-span-2 space-y-3">
+                    <div class="text-xs text-gray-500 mb-4">REAL-TIME ORDERFLOW</div>
+                    <div class="flex justify-between border-b border-white/5 py-1 text-red-500">
+                        <span>5892.25</span><span>420 <span class="text-[10px] ml-2 font-bold">[ABSORPTION]</span></span>
+                    </div>
+                    <div class="flex justify-between border-b border-white/5 py-1 text-gray-400">
+                        <span>5892.00</span><span>156</span>
+                    </div>
+                    <div class="flex justify-between border-b border-white/5 py-1 text-blue-400">
+                        <span>5891.75</span><span>890 <span class="text-[10px] ml-2 font-bold">[IMBALANCE]</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PILLARS -->
+    <section class="max-w-7xl mx-auto py-32 px-6 grid md:grid-cols-3 gap-12">
+        <div>
+            <h2 class="text-4xl font-bold mb-6">01. AMT</h2>
+            <p class="text-gray-400 leading-relaxed">Auction Market Theory is our foundation. We don't care about "patterns." We care about <strong>Value</strong>. We trade the move from balance to imbalance.</p>
+        </div>
+        <div>
+            <h2 class="text-4xl font-bold mb-6">02. TPO</h2>
+            <p class="text-gray-400 leading-relaxed">The Time Price Opportunity chart is our map. We identify where the market is "unfinished" and use Poor Highs and Single Prints as our targets.</p>
+        </div>
+        <div>
+            <h2 class="text-4xl font-bold mb-6">03. FLOW</h2>
+            <p class="text-gray-400 leading-relaxed">Order Flow is our execution. We use Footprint charts and the DOM to see exactly when the "big fish" are trapped and ready to be liquidated.</p>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="max-w-3xl mx-auto py-32 px-6 text-center">
+        <div class="glass p-12 rounded-3xl border-blue-500/50 relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-blue-600 px-6 py-1 text-xs font-bold uppercase tracking-widest">Limited Seats</div>
+            <h2 class="text-4xl font-bold mb-4">THE MASTERCLASS</h2>
+            <div class="text-6xl font-bold mb-8">$997 <span class="text-xl text-gray-500 font-normal">USD</span></div>
+            <ul class="text-left space-y-4 mb-10 text-gray-300">
+                <li class="flex items-center">✅ 40+ Hours of High-Definition Video Content</li>
+                <li class="flex items-center">✅ Private Sierra Chart / QuantTower Templates</li>
+                <li class="flex items-center">✅ Weekly Live Group Coaching Calls</li>
+                <li class="flex items-center">✅ Lifetime Access to Private Discord Community</li>
+            </ul>
+            <button class="w-full bg-blue-600 py-4 rounded-xl font-bold text-xl glow-hover transition">Secure Your Seat Today</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-20 text-center border-t border-white/5">
+        <p class="opacity-30 text-xs tracking-[0.2em] uppercase">© 2025 Auction Dynamics Masterclass // Built for Elite Futures Traders</p>
+    </footer>
+
+</body>
+</html>
